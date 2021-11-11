@@ -1,0 +1,78 @@
+.PorfolioSection {
+  padding: 5rem;
+}
+.websiteTypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  li {
+    margin: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+}
+.PorfolioRow > * {
+  margin: 1rem;
+}
+.WebsiteContainer {
+  margin-top: 1.5rem;
+  position: relative;
+}
+.portfolioImg {
+  display: block;
+  width: 100%;
+}
+.img_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+  & > * {
+    transform: translateY(20px);
+    transition: all 0.3s;
+  }
+  &:hover {
+    opacity: 1;
+    cursor: crosshair;
+    & > * {
+      transform: translateY(0px);
+    }
+  }
+}
+.img_title {
+  font-size: 1.5rem;
+  background: linear-gradient(var(--bluecolor), #efe4ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.goToWebsite {
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: none;
+    color: var(--bluecolor);
+  }
+}
+@media screen and (max-width: 768px) {
+  .PorfolioSection {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+.active {
+  color: var(--bluecolor);
+}

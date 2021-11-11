@@ -1,0 +1,48 @@
+.contactSection {
+  background: url("../../img/contactUsBG.jpeg");
+  height: 93vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-color: rgba(#000000, 0.85);
+  background-blend-mode: color;
+  padding: 5rem;
+}
+input {
+  padding: 0.2rem;
+  width: 45%;
+  border: none;
+}
+textarea {
+  padding: 0.2rem;
+}
+.sendSubmitBtn {
+  background-color: var(--bluecolor);
+  border: none;
+  border-radius: 3px;
+  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+  margin-top: 2rem;
+}
+.formIcons {
+  color: var(--bluecolor);
+}
+.phonePart {
+  margin-left: 5rem;
+}
+.input-error {
+  box-shadow: 0 0 9px red !important;
+}
+@media screen and(max-width:768px) {
+  .contactSection {
+    padding: 0;
+    height: 120vh;
+  }
+  .header {
+    margin-top: 3rem;
+  }
+  .phonePart {
+    margin-top: 3rem;
+  }
+}

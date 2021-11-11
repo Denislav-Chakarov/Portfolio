@@ -1,0 +1,15 @@
+.ExperienceSection {
+  padding: 5rem;
+}
+.jobExperience {
+  background-color: #eeee;
+  padding: 3rem;
+}
+.jobRow {
+  margin-top: 5rem;
+}
+@media screen and(max-width:768px) {
+  .ExperienceSection {
+    padding: 1rem;
+  }
+}

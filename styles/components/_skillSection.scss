@@ -1,0 +1,41 @@
+.skillSection {
+  height: 65vh;
+  background: url("../../img/bridge.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-color: rgba(#000000, 0.85);
+  background-blend-mode: color;
+}
+.skillbar {
+  position: relative;
+  color: white;
+  margin-bottom: 2rem;
+}
+.skillbar-percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.skillbarItself {
+  background-color: gray;
+  width: 100%;
+  height: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+.skillbarFill {
+  position: absolute;
+  left: 0;
+  background-color: var(--bluecolor);
+  height: 20px;
+  border-radius: 12px;
+}
+@media screen and(max-width:768px) {
+  .skillSection {
+    height: 100vh;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,202 @@
+.navBar {
+  position: fixed !important;
+  display: flex;
+  padding-top: 1.5rem;
+  z-index: 12;
+  width: 100%;
+  transition: all 0.5s;
+}
+.navBarFixed {
+  top: 0 !important;
+  background-color: white !important;
+  transition: all 1.5s;
+  box-shadow: 2px 2px 2px gray;
+}
+.loggoDenislav {
+  font-size: 1.7rem;
+  text-decoration: none !important;
+  position: absolute;
+  left: 13rem;
+}
+.firstLetters {
+  color: white;
+}
+.lettersColor {
+  color: black !important;
+  width: 50%;
+}
+.secondLetters {
+  color: var(--bluecolor);
+}
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 90%;
+  li {
+    margin: 0.8rem;
+    color: white;
+    cursor: pointer;
+    a {
+      color: white;
+      position: relative;
+      &:hover {
+        text-decoration: none !important;
+        &::after {
+          left: 0;
+          width: 100%;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0%;
+        background: var(--bluecolor);
+        height: 2px;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+}
+.burger {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 99;
+}
+.burger > div {
+  margin: 10px;
+  transition: all 0.3s;
+}
+.line1 {
+  width: 2rem;
+  height: 2px;
+  background-color: gray;
+}
+.line2 {
+  width: 2rem;
+  height: 2px;
+  background-color: gray;
+}
+.line3 {
+  width: 1.5rem;
+  height: 2px;
+  background-color: gray;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.firstSection {
+  transition: all 2s;
+}
+
+.hide {
+  transition: 0.34s all linear;
+  transform: scale(0.9);
+  opacity: 0;
+}
+.show {
+  transition: 0.34s all linear;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.sidebar {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.Navmobile {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  li {
+    opacity: 0;
+  }
+}
+.open {
+  z-index: 10;
+  display: block;
+}
+.mobileShow {
+  display: block;
+}
+.mobileNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  display: none;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+.mobileTransperentWhite {
+  background-color: transparent !important;
+}
+.mobileNavWhite {
+  color: white !important;
+}
+.blackBurger {
+  color: black;
+}
+
+.stopScrolling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
+
+.viewAction {
+  color: #00b0dc !important;
+  border-bottom: 1px solid black;
+}
+.viewAction2 {
+  color: #00b0dc !important;
+}
+@media screen and (max-width: 768px) {
+  .firstSection .navBar {
+    display: none;
+  }
+  .navList {
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    text-align: center;
+  }
+  .mobileNav {
+    display: block;
+    height: 70px;
+  }
+  .loggoDenislav:first-child {
+    position: absolute;
+    left: 2rem;
+  }
+}

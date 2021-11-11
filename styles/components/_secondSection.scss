@@ -1,0 +1,56 @@
+.secondSection {
+  margin-top: 3rem;
+  min-height: 80vh;
+  overflow: hidden;
+  background: white;
+}
+.myImageFrame {
+  background-color: #ffff;
+  padding: 0.8rem;
+  box-shadow: 10px 5px 5px #ccc;
+}
+.MyselfDiv {
+  position: relative;
+}
+.MyselfDiv::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background-color: gray;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+.MyDescription {
+  background: -webkit-linear-gradient(160deg, rgb(163, 0, 0), var(--bluecolor));
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skillsBtn {
+  background: var(--bluecolor);
+  color: white;
+  border-radius: 3px;
+  padding: 0.9rem 1.9rem 0.9rem 1.9rem;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  &:hover {
+    text-decoration: none;
+    background-color: rgba(2, 125, 197, 0.867);
+    color: black;
+  }
+}
+.CVDownload {
+  border: 1px solid var(--bluecolor);
+  padding: 0.75rem 1.9rem 0.75rem 1.9rem;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--bluecolor);
+    color: white;
+  }
+}
